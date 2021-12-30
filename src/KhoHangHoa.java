@@ -123,7 +123,7 @@ public class KhoHangHoa {
             check=current;
             save=current;
             while(check!=null){
-                if(check.data.price<save.data.price && check.data.type.equals(save.data.type)){
+                if((check.data.price<save.data.price) && (check.data.type.equals(save.data.type))){
                     save=check;
                 }
                 check=check.next;
@@ -159,7 +159,7 @@ public class KhoHangHoa {
             check=current;
             save=current;
             while(check!=null){
-                if(check.data.price>save.data.price && check.data.type.equals(save.data.type)){
+                if((check.data.price>save.data.price) && (check.data.type.equals(save.data.type))){
                     save=check;
                 }
                 check=check.next;
@@ -195,7 +195,7 @@ public class KhoHangHoa {
             check=current;
             save=current;
             while(check!=null){
-                if(check.data.date.before(save.data.date) && check.data.type.equals(save.data.type)){
+                if((check.data.date.before(save.data.date)) && (check.data.type.equals(save.data.type))){
                     save=check;
                 }
                 check=check.next;
@@ -231,7 +231,7 @@ public class KhoHangHoa {
             check=current;
             save=current;
             while(check!=null){
-                if(check.data.date.after(save.data.date) && check.data.type.equals(save.data.type)){
+                if((check.data.date.after(save.data.date)) && (check.data.type.equals(save.data.type))){
                     save=check;
                 }
                 check=check.next;
